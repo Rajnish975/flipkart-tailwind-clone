@@ -1,1 +1,1003 @@
+<!doctype html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>bikedekho.com</title>
+</head>
+
+
+<body>
+    <section class="py-1 sm:py-4 px-2 sm:px-0">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 sm:grid-cols-12 gap-6 items-center justify-evenly">
+
+                <div class="col-span-1 sm:col-span-3">
+                    <img src="images/logo.svg" alt="Logo" class="w-32">
+                </div>
+
+                <div class="col-span-6 hidden sm:block ">
+                    <div class="relative w-4/5">
+
+                        <input type="text" placeholder="Search Bikes or Brands"
+                            class="border border-gray-400 focus:outline-none rounded-full py-1.5 pl-6 pr-12 w-full">
+
+                        <i
+                            class="fa-solid fa-magnifying-glass absolute right-5 top-1/2 -translate-y-1/2 text-gray-500"></i>
+
+                    </div>
+                </div>
+
+                <div class="col-span-3 hidden sm:block">
+                    <a class="text-xs text-gray-700 me-4" href="http://"> English <i class="fa fa-caret-down"></i></a>
+                    <a class="" href="http://"><i class="fa-regular fa-heart me-4"></i></a>
+                    <a class="text-xs text-gray-700" href="http://"><i class="fa fa-user ms-2"></i> Login/Register</a>
+
+                </div>
+
+                <div class="col-span-1 block sm:hidden ms-auto">
+                    <button class="md:hidden text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-1 px-2 sm:px-0 hidden sm:block mb-3 border-t border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 grid-cols-12 flex gap-6">
+                <div class="col-span-10 pt-1">
+                    <a href="#" class="text-[11px] text-gray-700 me-4.5 font-bold uppercase"> Bikes <i
+                            class="fa fa-caret-down"></i></a>
+                    <a href="" class=" text-gray-700 me-4.5 uppercase text-[11px] font-bold"> Scooters <i
+                            class="fa fa-caret-down"></i></a>
+                    <a href="" class="text-[11px] font-bold text-gray-700 me-4.5 uppercase">Electric Two Wheelers <i
+                            class="fa fa-caret-down"></i></a>
+                    <a href="" class="text-[11px] font-bold text-gray-700 me-4.5 uppercase">Compare <i
+                            class="fa fa-caret-down"></i></a>
+                    <a href="" class="text-[11px] font-bold text-gray-700 me-4.5 uppercase">News & Videos <i
+                            class="fa fa-caret-down"></i></a>
+                    <a href="" class="text-[11px] font-bold text-gray-700 me-4.5 uppercase">Tools <i
+                            class="fa fa-caret-down"></i></a>
+                    <a href="" class="text-[11px] font-bold text-gray-700 me-4.5 uppercase">Used Bikes <i
+                            class="fa fa-caret-down"></i></a>
+                    <a href="http://" class="text-[11px] font-bold text-gray-700 me-4.5 uppercase">Account <i
+                            class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="col-span-2 ms-auto pt-1">
+                    <span class=" text-xs text-gray-600 text-end ">
+                        <i class=" me-1 fa-solid fa-location-dot"></i>
+                        Select City
+                    </span>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section style="background-image: url('images/slider.jpg');"
+        class="w-full bg-no-repeat bg-center bg-cover py-10 sm:py-16 md:py-24">
+        <div class="container mx-auto px-4">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+
+                <!-- Search Box -->
+                <div class="w-full max-w-[350px] mx-auto sm:mx-0 bg-white rounded-lg shadow-lg p-5">
+
+                    <h1 class="text-gray-700 text-md mb-3">
+                        Search the right bike
+                    </h1>
+
+                    <!-- New / Used Bike -->
+                    <div class="flex gap-3 mb-5">
+
+                        <a href="#"
+                            class="flex-1 text-center border border-gray-300 rounded py-2 px-2
+                               text-gray-500 hover:text-white hover:border-gray-500 hover:bg-black transition duration-500 text-sm">
+                            New Bike
+                        </a>
+
+                        <a href="#"
+                            class="flex-1 text-center border border-gray-300 rounded py-2 px-2
+                               text-gray-500 hover:text-white hover:border-gray-500 hover:bg-black transition duration-500 ease-in-out text-sm">
+                            Used Bike
+                        </a>
+
+                    </div>
+
+                    <!-- Search Type -->
+                    <div class="flex items-center justify-between mb-5">
+
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="w-4 h-4">
+                            <span class="text-xs text-gray-700">
+                                By Budget
+                            </span>
+                        </label>
+
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="w-4 h-4">
+                            <span class="text-xs text-gray-700">
+                                By Models
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <!-- Form -->
+                    <form action="">
+
+                        <!-- Bike Model -->
+                        <div class="mb-4">
+                            <label class="block text-sm  text-gray-700 mb-2">
+                                Select Model
+                            </label>
+
+                            <select name="model" class="w-full border border-gray-300 rounded px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-blue-400 text-[12px]">
+                                <option value="">Select Model</option>
+                                <option value="royal-enfield">Royal Enfield</option>
+                                <option value="hero">Hero</option>
+                                <option value="honda">Honda</option>
+                                <option value="bajaj">Bajaj</option>
+                                <option value="yamaha">Yamaha</option>
+                                <option value="tvs">TVS</option>
+                            </select>
+                        </div>
+
+                        <!-- Budget -->
+                        <div class="mb-4">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">
+                                Select Budget
+                            </label>
+
+                            <select name="budget" class="w-full border border-gray-300 rounded px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-blue-400 text-[12px]">
+                                <option value="">Select Budget</option>
+                                <option value="50000">Under ₹50,000</option>
+                                <option value="50000-100000">₹50,000 - ₹1 Lakh</option>
+                                <option value="100000-150000">₹1 Lakh - ₹1.5 Lakh</option>
+                                <option value="150000-200000">₹1.5 Lakh - ₹2 Lakh</option>
+                                <option value="200000">Above ₹2 Lakh</option>
+                            </select>
+                        </div>
+
+                        <!-- Search Button -->
+                        <button type="submit" class="w-full bg-red-500 text-white py-2 rounded
+               hover:bg-blue-600 transition">
+                            Search
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto bg-white rounded-xl border  border-gray-200 ">
+            <div class="px-5 py-10 bg-white-100  rounded sm:px-10 ">
+                <h1 class="text-black-200 font-bold mb-5">Bikes in Spotlight</h1>
+                <div class="flex mb-8">
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Commuter Bikes</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Sports Bikes</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Cruiser Bikes</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Best Mileage Bikes</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Electric Bikes</a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-5">
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/1.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class="text-xs font-semibold px-3 pt-2 mb-1">Hero Splendor Plus</a>
+
+                        <p class="text-xs font-semibold px-3 mb-3">Rs 77,777* Onwards</p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September
+                                Offers</button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/7.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class=" text-xs font-semibold px-3 pt-2 mb-1">TVS
+                            Raider</a>
+                        <p class="text-xs font-semibold px-3 mb-3">Rs 83,910* Onwards</p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September Offers</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/6.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class=" text-xs font-semibold px-3 pt-2 mb-1">Honda
+                            SP 125</a>
+
+                        <p class="text-xs font-semibold px-3 mb-3">Rs89,748* Onwards</p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September
+                                Offers</button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+
+                        <img src="images/5.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class=" text-xs font-semibold px-3 pt-2 mb-1">Bajaj
+                            Pulsar 125</a>
+                        <p class="text-xs font-semibold px-3 mb-3"> Rs92,990* Onwards</p>
+
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September
+                                Offers</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a href="#0" class="text-blue-900 text-xs">View All:Commuter Bikes</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 pb-10">
+        <div class="max-w-6xl mx-auto bg-white rounded-xl border border-gray-200">
+            <div class="px-10 py-6 bg-white-100  rounded-xl ">
+                <h1 class="text-black-200 font-bold mb-5">Scooters in Spotlight</h1>
+                <div class="flex mb-8">
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Popular Scooters</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Electric Scooters</a>
+
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-5">
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/10.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class="text-xs font-semibold px-3 pt-2 mb-1">Honda Activa</a>
+
+                        <p class="text-xs font-semibold px-3 mb-3">Rs76,083* Onwards</p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September
+                                Offers</button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/4.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class=" text-xs font-semibold px-3 pt-2 mb-1">Suzuki Access 125</a>
+                        <p class="text-xs font-semibold px-3 mb-3">Rs82,185* Onwards</p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September Offers</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/3.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class=" text-xs font-semibold px-3 pt-2 mb-1">HYamaha RayZR 125 Fi Hybrid</a>
+
+                        <p class="text-xs font-semibold px-3 mb-3">Rs79,880* Onwards</p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September
+                                Offers</button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+
+                        <img src="images/2.jpg" alt="Hero Splendor Plus">
+
+                        <a href="#" class=" text-xs font-semibold px-3 pt-2 mb-1">TVS Jupiter</a>
+                        <p class="text-xs font-semibold px-3 mb-3"> Rs74,125* Onwards</p>
+
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">View
+                                September
+                                Offers</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a href="#0" class="text-blue-900 text-xs">View All:Popular Scooters</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-50 pb-10 ">
+        <div class="max-w-6xl mx-auto bg-white rounded-xl broder border-gray-200">
+            <div class="px-10 py-6 bg-white-100 rounded-xl ">
+                <h1 class="text-black-200 font-bold mb-5">Upcoming Bikes & Scooters</h1>
+
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-5">
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/sxr-1756a75d00fcb965.avif" alt="Hero Splendor Plus">
+
+                        <a href="#" class="text-xs font-semibold px-3 pt-2 mb-1">Aprilia SXR 175</a>
+                        <p class="text-xs font-semibold px-3 mb-3">Rs1,45,000 <span
+                                class="text-[10px] text-gray-600">Estimated</span> </p>
+                        <p class="text-xs font-semibold px-3 mb-3"> Sep, 2026:<span class="text-[10px] text-gray-600">
+                                Expected Launch</span></p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">Alert
+                                Me
+                                When Launched
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/manx-r6a16aa8c7fd85.avif" alt="Hero Splendor Plus">
+
+                        <a href="#" class="text-xs font-semibold px-3 pt-2 mb-1">Norton Manx R</a>
+                        <p class="text-xs font-semibold px-3 mb-3">Rs30,00,000 <span
+                                class="text-[10px] text-gray-600">Estimated</span> </p>
+                        <p class="text-xs font-semibold px-3 mb-3"> Sep, 2026:<span class="text-[10px] text-gray-600">
+                                Expected Launch</span></p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">Alert
+                                Me
+                                When Launched
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/bajaj-adventure6a3d1406ac2f3.avif" alt="Hero Splendor Plus">
+
+                        <a href="#" class="text-xs font-semibold px-3 pt-2 mb-1">Bajaj Adventure</a>
+                        <p class="text-xs font-semibold px-3 mb-3">Rs2,00,000 <span
+                                class="text-[10px] text-gray-600">Estimated</span> </p>
+                        <p class="text-xs font-semibold px-3 mb-3"> Sep, 2026:<span class="text-[10px] text-gray-600">
+                                Expected Launch</span></p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">Alert
+                                Me
+                                When Launched
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bg-white  rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/2026-pulsar6911b6fa0d91e.avif" alt="Hero Splendor Plus">
+
+                        <a href="#" class="text-xs font-semibold px-3 pt-2 mb-1">2026 Bajaj Pulsar</a>
+                        <p class="text-xs font-semibold px-3 mb-3">Rs95,000 <span
+                                class="text-[10px] text-gray-600">Estimated</span> </p>
+                        <p class="text-xs font-semibold px-3 mb-3"> Sep, 2026:<span class="text-[10px] text-gray-600">
+                                Expected Launch</span></p>
+
+                        <div class="px-4 pb-5">
+                            <button class="border border-gray-400 rounded px-4 py-2 w-full  text-xs font-medium">Alert
+                                Me
+                                When Launched
+                            </button>
+                        </div>
+
+                    </div>
+                    <a href="#0" class="text-blue-900 text-xs">View All:Upcoming Bikes</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-gray-50 pb-10">
+        <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-xl">
+            <div class="px-10 py-6 bg-white-100 rounded-xl ">
+                <h1 class="text-black-200 font-bold mb-5">Browse Bikes By</h1>
+                <div class="flex mb-8">
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Brand </a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Budget</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700"> Body Style</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Mileage</a>
+                    <a href="#" class=" me-4 text-xs font-bold text-gray-700">Engine</a>
+
+                </div>
+                <div class="grid grid-cols-4 sm:grid-cols-11 gap-5">
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/honda.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Honda</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2  hover:border-red-500">
+                            <img src="images/royal-enfield.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs whitespace-nowrap">Royal Enfield</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/tvs.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Tvs</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/yamaha.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Yamaha</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/hero.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Hero</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/bajaj.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Bajaj</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/ktm.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Ktm</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/kawasaki.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Kawasaki</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/bmw.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">BMW</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/ampere.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Ampere</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/suzuki.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Suzuki</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/jawa-motorcycles.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Jawa</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/triumph.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Triumph</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/harley-davidson.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs whitespace-nowrap">
+                                Harley Davidson
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/ather-energy.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Ather</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/aprilia.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Aprilia</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/ducati.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Ducati</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/ola-electric.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Ola</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/keeway.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Keeway</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/revolt.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Revolt</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/vida.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Vida</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div
+                            class="bg-white border rounded-lg shadow-lg overflow-hidden py-4 px-2 text-center hover:border-red-500">
+                            <img src="images/oben.avif" alt="Hero Splendor Plus">
+                            <p class="text-xs">Oben</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 pb-10">
+        <div class="max-w-6xl mx-auto bg-white rounded-xl">
+            <div class=" px-9 py-3 sm:px-10 roundes-xl">
+                <div class="font-bold mb-4">
+                    <h1 class="">User Reviews Posted Recently</h1>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-5">
+                    <div class="max-w-xs bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                        <div class="p-5">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-100 flex overflow-hidden">
+                                    <img src="images/1.jpg" alt="Ola S1 X Plus" class="w-full h-full object-cover" />
+                                </div>
+                                <h3 class="font-medium text-gray-900 text-base">Ola S1 X Plus</h3>
+                            </div>
+
+                            <p class="text-sm text-gray-600 mb-2">succedd life</p>
+                            <p class="text-gray-500 text-[12px] max-w-[100ch] line-clamp-3 mb-3">
+                                Bahut hi aachi electric scooter hai india no 1 ev scooter hai aur bahut hi acha range
+                                wali
+                                hai,
+                                top speed 120 km hai, aur feature bhaut hi jabardast aaye hai, aur bahut sari electric
+                                scooty
+                                hai, par india me iska jyada istemal ho raha hai aur india no 1 scooty banne wali hai
+                                aur
+                                sabse
+                                jyada chlne wali behtar scooter hai.
+                            </p>
+
+                        </div>
+
+
+                        <div class="border-t border-gray-100 px-5 py-3 text-center">
+                            <a href="#" class="text-blue-600 font-semibold text-[13px] hover:underline">
+                                All S1 X Plus Reviews (7) >
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="max-w-xs bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                        <div class="p-5">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-100 flex overflow-hidden">
+                                    <img src="images/2.jpg" alt="Ola S1 X Plus" class="w-full h-full object-cover" />
+                                </div>
+                                <h3 class="font-medium text-gray-900 text-base">Ola S1 X Plus</h3>
+                            </div>
+
+                            <p class="text-sm text-gray-600 mb-2">succedd life</p>
+                            <p class="text-gray-500 text-[12px] max-w-[100ch] line-clamp-3 mb-3">
+                                Bahut hi aachi electric scooter hai india no 1 ev scooter hai aur bahut hi acha range
+                                wali
+                                hai,
+                                top speed 120 km hai, aur feature bhaut hi jabardast aaye hai, aur bahut sari electric
+                                scooty
+                                hai, par india me iska jyada istemal ho raha hai aur india no 1 scooty banne wali hai
+                                aur
+                                sabse
+                                jyada chlne wali behtar scooter hai.
+                            </p>
+
+                        </div>
+
+
+                        <div class="border-t border-gray-100 px-5 py-3 text-center">
+                            <a href="#" class="text-blue-600 font-semibold text-[13px] hover:underline">
+                                All S1 X Plus Reviews (7) >
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="max-w-xs bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                        <div class="p-5">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-100 flex overflow-hidden">
+                                    <img src="images/3.jpg" alt="Ola S1 X Plus" class="w-full h-full object-cover" />
+                                </div>
+                                <h3 class="font-medium text-gray-900 text-base">Ola S1 X Plus</h3>
+                            </div>
+
+                            <p class="text-sm text-gray-600 mb-2">succedd life</p>
+                            <p class="text-gray-500 text-[12px] max-w-[100ch] line-clamp-3 mb-3">
+                                Bahut hi aachi electric scooter hai india no 1 ev scooter hai aur bahut hi acha range
+                                wali
+                                hai,
+                                top speed 120 km hai, aur feature bhaut hi jabardast aaye hai, aur bahut sari electric
+                                scooty
+                                hai, par india me iska jyada istemal ho raha hai aur india no 1 scooty banne wali hai
+                                aur
+                                sabse
+                                jyada chlne wali behtar scooter hai.
+                            </p>
+
+                        </div>
+
+
+                        <div class="border-t border-gray-100 px-5 py-3 text-center">
+                            <a href="#" class="text-blue-600 font-semibold text-[13px] hover:underline">
+                                All S1 X Plus Reviews (7) >
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="max-w-xs bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                        <div class="p-5">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-100 flex overflow-hidden">
+                                    <img src="images/5.jpg" alt="Ola S1 X Plus" class="w-full h-full object-cover" />
+                                </div>
+                                <h3 class="font-medium text-gray-900 text-base">Ola S1 X Plus</h3>
+                            </div>
+
+                            <p class="text-sm text-gray-600 mb-2">succedd life</p>
+                            <p class="text-gray-500 text-[12px] max-w-[100ch] line-clamp-3 mb-3">
+                                Bahut hi aachi electric scooter hai india no 1 ev scooter hai aur bahut hi acha range
+                                wali
+                                hai,
+                                top speed 120 km hai, aur feature bhaut hi jabardast aaye hai, aur bahut sari electric
+                                scooty
+                                hai, par india me iska jyada istemal ho raha hai aur india no 1 scooty banne wali hai
+                                aur
+                                sabse
+                                jyada chlne wali behtar scooter hai.
+                            </p>
+
+                        </div>
+
+
+                        <div class="border-t border-gray-100 px-5 py-3 text-center">
+                            <a href="#" class="text-blue-600 font-semibold text-[13px] hover:underline">
+                                All S1 X Plus Reviews (7) >
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="bg-gray-50 pb-10">
+        <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-xl">
+            <div class="py-10 px-6 bg-white ">
+                <h1 class="font-semibold mb-3">Get Trusted Used Bikes Nearby</h1>
+                <div class="grid grid-cols-3 sm:grid-cols-12  gap-x-10">
+                    <div class="sm:col-span-9 col-span-4 gap-3">
+                        <div class="grid gris-cols-3 sm:grid-cols-6 gap-5">
+
+                            <div class=" shadow-xl border border-gray-100 hover:border-gray-300 rounded inset-shadow-sm inset-shadow-indigo-500/50">
+                                <div class="py-3 px-1 sm:py-3 sm:px-3 items-center justify-center text-center">
+                                    <img src="images/ahmedabad.svg" alt="" class="mb-2 w-20  mx-auto  ">
+                                    <p class="text-[15px] md:text-[10px] sm:text-[10px] text-center">88 Used Bikes in Ahmedabad</p>
+                                </div>
+                            </div>
+
+                            <div class=" shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/bangalore.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[15px] md:text-[10px] sm:text-[10px] text-center">387 Used Bikes in Bangalore</p>
+                                </div>
+                            </div>
+
+                            <div class=" shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/chandigarh.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[15px] md:text-[10px] sm:text-[10px] text-center">25 Used Bikes in Chandigarh</p>
+                                </div>
+                            </div>
+
+                            <div class="shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/chennai.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[15px] md:text-[10px] sm:text-[10px] text-center">184 Used Bikes in Chennai</p>
+                                </div>
+                            </div>
+                            <div class=" shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/delhi.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[15px] md:text-[10px] sm:text-[10px] text-center">609 Used Bikes in Delhi</p>
+                                </div>
+                            </div>
+                            <div class=" shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/ghaziabad.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[10px] text-center">82 Used Bikes in Ghaziabad</p>
+                                </div>
+                            </div>
+
+                            <div class="shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/ahmedabad.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[10px] text-center">88 Used Bikes in Ahmedabad</p>
+                                </div>
+                            </div>
+
+                            <div class="shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/bangalore.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[10px] text-center">387 Used Bikes in Bangalore</p>
+                                </div>
+                            </div>
+
+                            <div class="shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/chandigarh.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[10px] text-center">25 Used Bikes in Chandigarh</p>
+                                </div>
+                            </div>
+
+                            <div class="shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/chennai.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[10px] text-center">184 Used Bikes in Chennai</p>
+                                </div>
+                            </div>
+                            <div class="shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/delhi.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[10px] text-center">609 Used Bikes in Delhi</p>
+                                </div>
+                            </div>
+                            <div class="shadow-xl border border-gray-100 hover:border-gray-300 rounded">
+                                <div class=" py-3 px-3 items-center justify-center text-center">
+                                    <img src="images/ghaziabad.svg" alt="" class="mb-2 w-20 mx-auto ">
+                                    <p class="text-[10px] text-center">82 Used Bikes in Ghaziabad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-3 col-span-5  pt-5 flex flex-col justify-center">
+
+                        <h2 class="text-sm text-gray-500 font-semibold text-center mb-6">
+                            I am looking to buy a second hand bike in
+                        </h2>
+
+                        <!-- City Dropdown -->
+                        <div class="relative">
+
+                            <select
+                                class="w-full appearance-none border border-gray-300 rounded-lg px-5 py-2 text-gray-500 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-[12px]">
+
+                                <option value="">Enter your city</option>
+                                <option>Ahmedabad</option>
+                                <option>Bangalore</option>
+                                <option>Chandigarh</option>
+                                <option>Chennai</option>
+                                <option>Delhi</option>
+                                <option>Ghaziabad</option>
+                                <option>Kolkata</option>
+                                <option>Lucknow</option>
+                                <option>Mumbai</option>
+
+                            </select>
+
+                          
+                            <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-1 px-5">
+        <footer class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 sm:grid-cols-4 ">
+                <div class="pt-8">
+                    <h1 class="mb-3 text-xs font-semibold">About CarDekho</h1>
+                    <ul>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">About</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">Careers With Us</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">Terms & Conditions</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">Privacy Policy</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="pt-8">
+                    <h1 class="mb-3 text-xs font-semibold">Connect With Us</h1>
+                    <ul>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">Feedback</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">Contact Us</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">Advertise with Us</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+                <div class="pt-8">
+                    <h1 class="mb-3 text-xs font-semibold">OTHERS</h1>
+                    <ul>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">TrucksDekho</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">TractorsDekho</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">TyreDekho</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">BatteryDekho</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-xs text-gray-500 mb-3">Girnar Vision Fund</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="pt-8">
+                    <h1 class="mb-3 text-xs font-semibold">EXPERIENCE BIKEDEKHO APP</h1>
+                    <div class="flex gap-5 mb-3">
+                        <img src="images/itunes.svg" alt="" class="w-20 md:w-20 lg:w-20">
+                        <img src="images/gplay_badge.avif" alt="" class="w-20 md:w-20 lg:w-20">
+                    </div>
+
+                    <h1 class=" text-xs font-semibold">CarDekho Group Ventures</h1>
+                    <div class="flex gap-5">
+                        <img src="images/footer_cd_logo.svg" alt="" class="w-20 md:w-20 lg:w-20">
+                        <img src="images/rupyy-logo-v1.svg" alt="" class="w-20 md:w-20 lg:w-20">
+                    </div>
+                    <div class="flex gap-5">
+                        <img src="images/zigwheels-logo-new-v1.svg" alt="" class="w-20 md:w-20 lg:w-20">
+                        <img src="images/Insurance-Dekho-v1.svg" alt="" class="w-20 md:w-20 lg:w-20">
+                    </div>
+
+                    <div class="flex gap-5">
+                        <img src="images/Revv_Logo-v1.svg" alt="" class="w-20 md:w-20 lg:w-20">
+                        <img src="images/carrum-logo1.svg" alt="" class="w-20 md:w-20 lg:w-20">
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+</body>
+
+</html>
